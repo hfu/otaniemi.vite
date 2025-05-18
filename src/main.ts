@@ -32,11 +32,13 @@ const THEMES = {
     earth: '#f5f5f5', // lighter gray
     buildings: '#aaa',
     roads: '#a0c4ff',
+    text: '#000000', // black
   },
   DARK: {
     earth: '#393e46', // slightly lighter gray
     buildings: '#1de9b6', // turquoise
     roads: '#888888', // darker gray
+    text: '#eeeeee', // light gray
   },
 };
 
@@ -67,8 +69,16 @@ const line = {
   type: 'line',
 };
 
+const symbol = {
+  ...layer,
+  type: 'symbol',
+  layout: {
+    'text-font': 'Geist Mono Regular',
+  }
+}
 const style = {
   version: 8 as 8,
+  glyphs: 'https://hfu.github.io/geist.sdf/{fontstack}/{range}.pbf',
   sources: {
     otaniemi: {
       type: 'vector',
@@ -85,12 +95,33 @@ const style = {
     {
       ...line,
       id: 'roads',
-      'source-layer': 'roads',
-      paint: { 'line-color': theme.roads },
+      'source-layer': 'roads'
     },
     {
       ...extrusion,
       id: '3d-buildings',
+    },
+    {
+      ...symbol,
+      id: 'addr_housenumber',
+      filter: ['in', 'kind', 'address'],
+      'source-layer': 'buildings',
+      layout: {
+        'text-field': ['get', 'addr_housenumber'],
+        'text-size': 10,
+        'text-font': ['Geist Mono Thin'],
+        'text-anchor': 'center',
+        'text-justify': 'center'
+      },
+      paint: {
+        'text-color': theme.text,
+        'text-halo-color': theme.earth,
+        'text-halo-width': 1,
+        'text-halo-blur': 0.5,
+        'text-opacity': 0.8,
+        'text-translate': [0, 0],
+        'text-translate-anchor': 'viewport'
+      }
     },
   ],
 };

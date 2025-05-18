@@ -146,5 +146,15 @@
 
 **🤖 Copilot:**
 - I reviewed the README.md and applied all proposed corrections: clarified the CC0 public domain license, updated the import example, removed 'for copilot', clarified the 'buildings' layer explanation, and improved section titles. The documentation is now more accurate and user-friendly!
+
+**👩‍✈️ Pilot:** I added glyph support to the README and would like to implement it in the code as well.
+
+**🤖 Copilot:**
+- I added the `glyphs` property to the style object in main.ts, enabling Geist font support for map labels.
+
+**👩‍✈️ Pilot:** Please generate the static site.
+
+**🤖 Copilot:**
+- I ran `npm run build` and successfully regenerated the static site with the latest glyph/font and label updates.
 ---
 

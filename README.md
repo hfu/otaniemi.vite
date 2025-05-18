@@ -9,6 +9,21 @@ https://hfu.github.io/otaniemi.vite/#14.46/60.18254/24.82681/17.6/57
 - Show 3D buildings in Otaniemi
 - Illustrate how to create a style.json using JavaScript spread syntax effectively
 
+## 🧑‍🎨 Features
+- Modern, fast, and lightweight map viewer built with Vite and MapLibre GL JS
+- 3D building visualization using vector tiles and fill-extrusion
+- PMTiles support for efficient, single-file vector tile hosting
+- Flexible color themes (DARK/LIGHT) for easy customization
+- Geolocation, zoom, and scale controls for user-friendly navigation
+- Custom font rendering with Geist SDF glyphs
+- Address label rendering with styleable text and halo
+- Ready for GitHub Pages static hosting (output to `docs/`)
+
+## 🤔 Why PMTiles?
+- PMTiles is a single-file format for storing and serving vector tiles efficiently.
+- It enables easy hosting on static file servers (like GitHub Pages) without a backend.
+- Learn more: [PMTiles documentation](https://protomaps.com/docs/pmtiles/)
+
 ## 🛠️ Build Instructions
 - Create a Vite project
   - The static site is generated under the `docs` folder instead of `dist` so it can be hosted on GitHub Pages.
@@ -26,6 +41,7 @@ https://hfu.github.io/otaniemi.vite/#14.46/60.18254/24.82681/17.6/57
     ```
 - The default map center is set to Otaniemi, Espoo, Finland, with zoom 13.66 at [60.18498, 24.82685]
 - With MapLibre GL JS, a geolocation control, a zoom control, and a scale control are added to the map.
+- Set "glyphs": "https://hfu.github.io/geist.sdf/{fontstack}/{range}.pbf" at style.json to use the font from the Geist project.
 
 ## 📦 Prerequisites
 - Node.js (version 18.x or higher recommended)
@@ -114,6 +130,35 @@ const theme = THEMES.DARK; // or THEMES.LIGHT
 ```
 
 This makes it easy to experiment with different color palettes and adapt the map to your needs or preferences.
+
+## 📝 Customization Tips
+- **Change the map theme:**
+  - Edit `const theme = THEMES.DARK;` in `src/main.ts` to switch between DARK and LIGHT.
+- **Add or modify layers:**
+  - Edit the `layers` array in the style object in `src/main.ts`.
+- **Change the default map center or zoom:**
+  - Edit the `center` and `zoom` variables in `src/main.ts`.
+- **Use a different font:**
+  - Change the `glyphs` property in the style object and update `text-font` in symbol layers.
+- **Add more controls:**
+  - Use MapLibre GL JS controls like `NavigationControl`, `GeolocateControl`, or add your own.
+
+## 🙋 FAQ
+
+**Q: Can I use my own PMTiles file?**
+- Yes! Change the `pmtilesUrl` variable in `src/main.ts` to point to your own PMTiles file.
+
+**Q: How do I deploy to GitHub Pages?**
+- Build the site with `npm run build`.
+- Push the `docs/` folder to your GitHub repository.
+- Enable GitHub Pages in your repository settings, selecting the `docs/` folder as the source.
+
+**Q: How do I add more labels or change label style?**
+- Edit or add `symbol` layers in the `layers` array in `src/main.ts`.
+- Adjust `layout` and `paint` properties for text appearance.
+
+**Q: Where can I learn more about MapLibre GL JS styling?**
+- See the [MapLibre Style Specification](https://maplibre.org/maplibre-gl-js-docs/style-spec/).
 
 ## 📄 License
 This project is dedicated to the public domain under the CC0 1.0 Universal license. See [LICENSE](./LICENSE) for details.
