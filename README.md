@@ -90,6 +90,27 @@ Here are all the commands that were used to set up this repository:
 
 > "A good setup is like a well-paved road—smooth and easy to follow!"
 
+## 🎨 Themes
+
+This project supports a flexible color theme system for the map display. You can easily switch between different visual styles by changing the theme in the code.
+
+- **DARK (default):**
+  - Earth: `#393e46` (slightly lighter gray)
+  - Buildings: `#1de9b6` (turquoise)
+  - Roads: `#888888` (darker gray)
+- **LIGHT:**
+  - Earth: `#f5f5f5` (light gray)
+  - Buildings: `#aaa` (medium gray)
+  - Roads: `#a0c4ff` (light blue)
+
+You can change the theme by editing the `theme` variable in `src/main.ts`:
+
+```ts
+const theme = THEMES.DARK; // or THEMES.LIGHT
+```
+
+This makes it easy to experiment with different color palettes and adapt the map to your needs or preferences.
+
 ## 📄 License
 This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
 

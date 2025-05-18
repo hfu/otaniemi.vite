@@ -120,5 +120,14 @@
 **🤖 Copilot:**
 - I refreshed the README.md in English, with clear sections, emoji, usage, structure, and setup steps for GitHub users.
 
+**👩‍✈️ Pilot:** I'd like the buildings to be turquoise, the earth a slightly lighter gray, and the roads a darker gray.
+
+**🤖 Copilot:**
+- I updated the DARK theme: buildings are now turquoise (#1de9b6), earth is a lighter gray (#393e46), and roads are a darker gray (#888888). Please build and check the new color scheme!
+
+**👩‍✈️ Pilot:** Please add an explanation about THEMES, LIGHT, and DARK to the README.md. Add a ## Themes section before the License section.
+
+**🤖 Copilot:**
+- I added a "Themes" section to the README.md, explaining the THEMES object, the LIGHT and DARK color palettes, and how to switch between them in the code. Now users can easily understand and customize the map's color theme!
 ---
 
