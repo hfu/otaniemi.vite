@@ -141,5 +141,10 @@
 
 **🤖 Copilot:**
 - Noted! I will continue to keep this dialogue up to date with every change and improvement, including all manual edits to the README.md or other project files.
+
+**👩‍✈️ Pilot:** Please review the README.md for accuracy and update any potentially misleading or unclear sections as discussed.
+
+**🤖 Copilot:**
+- I reviewed the README.md and applied all proposed corrections: clarified the CC0 public domain license, updated the import example, removed 'for copilot', clarified the 'buildings' layer explanation, and improved section titles. The documentation is now more accurate and user-friendly!
 ---
 

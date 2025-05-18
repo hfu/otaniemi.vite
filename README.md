@@ -9,7 +9,7 @@ https://hfu.github.io/otaniemi.vite/#14.46/60.18254/24.82681/17.6/57
 - Show 3D buildings in Otaniemi
 - Illustrate how to create a style.json using JavaScript spread syntax effectively
 
-## 🛠️ Build Instructions for Copilot
+## 🛠️ Build Instructions
 - Create a Vite project
   - The static site is generated under the `docs` folder instead of `dist` so it can be hosted on GitHub Pages.
 - Create the MapLibre style description inside `main.ts`.
@@ -19,7 +19,11 @@ https://hfu.github.io/otaniemi.vite/#14.46/60.18254/24.82681/17.6/57
   - The schema of the vector tiles is documented at https://docs.protomaps.com/basemaps/layers
   - The `buildings` vector tile layer is used, with properties `soft_rank`, `height`, `min_height` to create 3D buildings as a `fill-extrusion` layer. Only polygons with `kind` being either `building` or `building_part` are used.
 - Install the maplibre-gl-js and pmtiles packages
-  - `main.ts` may start with `import { Map } from 'maplibre-gl'; import * as pmtiles from 'pmtiles';`
+  - `main.ts` typically starts with:
+    ```ts
+    import maplibregl, { Map, GeolocateControl, ScaleControl, NavigationControl } from 'maplibre-gl';
+    import * as pmtiles from 'pmtiles';
+    ```
 - The default map center is set to Otaniemi, Espoo, Finland, with zoom 13.66 at [60.18498, 24.82685]
 - With MapLibre GL JS, a geolocation control, a zoom control, and a scale control are added to the map.
 
@@ -112,9 +116,8 @@ const theme = THEMES.DARK; // or THEMES.LIGHT
 This makes it easy to experiment with different color palettes and adapt the map to your needs or preferences.
 
 ## 📄 License
-This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+This project is dedicated to the public domain under the CC0 1.0 Universal license. See [LICENSE](./LICENSE) for details.
 
-## 🔗 See Also
 ## 🌐 Related Resources
 
 Here are some helpful links to deepen your understanding and support your work:
