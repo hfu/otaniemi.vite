@@ -129,5 +129,10 @@
 
 **🤖 Copilot:**
 - I added a "Themes" section to the README.md, explaining the THEMES object, the LIGHT and DARK color palettes, and how to switch between them in the code. Now users can easily understand and customize the map's color theme!
+
+**👩‍✈️ Pilot:** Let's build the static site.
+
+**🤖 Copilot:**
+- I ran `npm run build` and successfully built the static site with the latest theme and documentation updates. The site is ready for deployment on GitHub Pages!
 ---
 
