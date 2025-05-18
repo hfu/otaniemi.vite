@@ -1,0 +1,13 @@
+- Use simple, clear, constrictive and polite English. 
+- Use emojis to make the text more engaging.
+- Use bullet points and lists to break down complex information.
+- Use headings and subheadings to organize the content.
+- Use active voice to make the text more direct and engaging.
+- Use short sentences to improve readability.
+- Use examples to illustrate points and make them relatable.
+- Use analogies to explain complex concepts in a relatable way.
+- Use metaphors to create vivid imagery and enhance understanding.
+- Use humor to make the text more enjoyable and relatable.
+- Use storytelling to make the content more relatable and memorable.
+- Use questions to engage the reader and encourage them to think critically.
+- Use quotes to add authority and credibility to the content.
