@@ -2,7 +2,7 @@
 A Vite-based MapLibre site for otaniemi.pmtiles
 
 ## 🚀 Demo
-https://hfu.github.io/otaniemi.vite/
+https://hfu.github.io/otaniemi.vite/#14.46/60.18254/24.82681/17.6/57
 
 ## 🎯 Purpose
 - Demonstrate the use of PMTiles with MapLibre
@@ -115,5 +115,17 @@ This makes it easy to experiment with different color palettes and adapt the map
 This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
 
 ## 🔗 See Also
-- https://github.com/hfu/otaniemi.pmtiles
-- https://docs.protomaps.com/basemaps/layers
+## 🌐 Related Resources
+
+Here are some helpful links to deepen your understanding and support your work:
+
+- [otaniemi.pmtiles GitHub Repository](https://github.com/hfu/otaniemi.pmtiles)  
+    *Explore the source PMTiles data used in this project. You can find tile generation scripts, metadata, and more.*
+
+- [Protomaps Basemaps Layers Documentation](https://docs.protomaps.com/basemaps/layers)  
+    *Curious about the vector tile schema? This documentation explains the structure and properties of each layer, including `buildings`.*
+
+- [PMTiles Viewer: Otaniemi](https://pmtiles.io/#map=13.49/60.18506/24.8306&url=https%3A%2F%2Fhfu.github.io%2Fotaniemi.pmtiles%2Fotaniemi.pmtiles)  
+    *Want to see the raw tiles in action? This interactive viewer lets you explore the Otaniemi PMTiles directly on the map.*
+
+> "The best way to learn is by exploring—don't be afraid to click around and see what you discover!" 🚀
